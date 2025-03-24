@@ -16,9 +16,7 @@ public class LoginPageTest extends BaseClass {
    
     public void setup( String browser) {
         setupExtentReport();
-        //invokeBrowser(browser);
         driver = BaseClass.driver;
-        //openLoginPage();
         loginPage = new LoginPage(driver);
         test = extent.createTest("Login Page Test");
     }
@@ -47,7 +45,6 @@ public class LoginPageTest extends BaseClass {
     @AfterClass
     public void tearDown() {
     	 driver.get("https://magento.softwaretestingboard.com/");
-       // driver.quit();
         extent.flush();
     }
 }

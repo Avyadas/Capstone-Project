@@ -78,7 +78,6 @@ public class CheckoutTest extends BaseClass {
             test.log(Status.PASS, "Logged out successfully");
 
         } catch (Exception e) {
-            //test.log(Status.FAIL, "Checkout test failed: " + e.getMessage());
             e.printStackTrace();
         }
     }

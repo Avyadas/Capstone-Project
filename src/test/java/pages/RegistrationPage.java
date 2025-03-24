@@ -12,15 +12,6 @@ public class RegistrationPage {
     public RegistrationPage(WebDriver driver) {
         this.driver = driver;
     }
-
-//    // Define locators correctly
-//    private By firstName = By.id("firstname");
-//    private By lastName = By.id("lastname");
-//    private By email = By.id("email_address");
-//    private By password = By.id("password");
-//    private By confirmPassword = By.id("password-confirmation");
-//    private By registerBtn = By.xpath("//button[@title='Create an Account']");
-
     // Register user with correct locators
     public void registerUser(String fName, String lName, String email, String pass) {
         driver.findElement(By.id("firstname")).sendKeys(fName);

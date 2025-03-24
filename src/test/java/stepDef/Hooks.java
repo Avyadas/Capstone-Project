@@ -13,11 +13,6 @@ public class Hooks {
     @Before
     public void setup() {
         if (driver == null) {
-            //System.setProperty("webdriver.gecko.driver", "path/to/geckodriver");
-			/*
-			 * FirefoxOptions options = new FirefoxOptions(); driver = new
-			 * FirefoxDriver(options);
-			 */
         	driver = BaseClass.getDriver();
             driver.manage().window().maximize();
         }

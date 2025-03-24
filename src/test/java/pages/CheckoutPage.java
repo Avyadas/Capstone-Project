@@ -19,8 +19,6 @@ public class CheckoutPage {
     By phone = By.name("telephone");
     By shipHereButton = By.xpath("//span[normalize-space()='Ship here']");
     By freeShipping = By.xpath("//tbody/tr[1]/td[1]");
-   // By freeShipping = By.xpath(" //td[contains(text(),'$0.00')]/preceding-sibling::td/input[@type='radio']");
-  //td[contains(text(),'$0.00')]/preceding-sibling::td/input[@type='radio']
     By nextButton = By.xpath("//span[normalize-space()='Next']");
     By placeOrderButton = By.xpath("//button[@title='Place Order']");
     By orderNumber = By.cssSelector("a[class='order-number'] strong");
@@ -30,7 +28,7 @@ public class CheckoutPage {
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;
     }
- // ✅ Click "Proceed to Checkout"
+ //Click "Proceed to Checkout"
     public void clickProceedToCheckout() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -40,14 +38,10 @@ public class CheckoutPage {
         }
     }
 
-    // Fill Shipping Details
+    //Fill Shipping Details
     public void enterShippingDetails(String fName, String lName, String address, String cityName, String stateName, String zip, String countryName, String phoneNum) {
     	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("checkout-loader")));
-        wait.until(ExpectedConditions.elementToBeClickable(AddressBtn)).click();
-//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", AddressBtn);
-//        ((WebElement) AddressBtn).click();
-    	//driver.findElement(By.xpath("//button[@class='action action-show-popup']")).click();;
     	try {
             driver.findElement(firstName).clear();
             driver.findElement(firstName).sendKeys(fName);
@@ -55,18 +49,15 @@ public class CheckoutPage {
             driver.findElement(lastName).sendKeys(lName);
             driver.findElement(streetAddress).sendKeys(address);
             driver.findElement(city).sendKeys(cityName);
-
             selectFromDropdown(state, stateName);
             driver.findElement(zipCode).sendKeys(zip);
             selectFromDropdown(country, countryName);
             driver.findElement(phone).sendKeys(phoneNum);
-
-//            wait.until(ExpectedConditions.elementToBeClickable(shipHereButton)).click();
         } catch (Exception e) {
-            //System.out.println("Failed to enter shipping details: " + e.getMessage());
+            System.out.println("Failed to enter shipping details: " + e.getMessage());
         }
     }
- // ✅ Click "Ship Here"
+ //Click "Ship Here"
     public void clickShipHere() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -88,7 +79,7 @@ public class CheckoutPage {
         }
     }
 
-    // Click Next Button (Payment Step)
+    // Click Next Button (Payment Step) to continue to payment
     public void clickNext() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -98,7 +89,7 @@ public class CheckoutPage {
         }
     }
 
-    // Place Order
+    // Placing order by clicking Place Order
     public void placeOrder() {
         try {
         	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));

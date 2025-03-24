@@ -15,7 +15,6 @@ public class UserRegistrationTest extends BaseClass {
         setupExtentReport();
         test = extent.createTest("User Registration Test");
         invokeBrowser();
-        //driver = new FirefoxDriver();
         openRegistrationPage();
         registrationPage = new RegistrationPage(driver);
     }
@@ -23,7 +22,7 @@ public class UserRegistrationTest extends BaseClass {
     @Test(priority = 1)
     public void registerWithInvalidDetails() throws InterruptedException {
         test.log(Status.INFO, "Testing registration with invalid details.");
-
+        //Registration with invalid details
         registrationPage.registerUser(prop.getProperty("invalid_first_name"),
                                       prop.getProperty("invalid_last_name"),
                                       prop.getProperty("invalid_email"),
@@ -38,7 +37,7 @@ public class UserRegistrationTest extends BaseClass {
     @Test(priority = 2, dependsOnMethods = "registerWithInvalidDetails")
     public void registerWithValidDetails() throws InterruptedException {
         test.log(Status.INFO, "Testing registration with valid details.");
-
+        //Registration with valid details
         registrationPage.registerUser(prop.getProperty("valid_first_name"),
                                       prop.getProperty("valid_last_name"),
                                       prop.getProperty("valid_email"),

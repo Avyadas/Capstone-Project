@@ -12,7 +12,6 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
-       // this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     // Locators
@@ -30,7 +29,7 @@ public class LoginPage {
         
     }
 
-    // Handle Alert & Screenshot
+    // Handles Alert & Screenshot
     public void handleAlert(String expectedMessage, String screenshotName) {
         try {
         	ScreenshotUtil.takeScreenshot(driver, screenshotName);

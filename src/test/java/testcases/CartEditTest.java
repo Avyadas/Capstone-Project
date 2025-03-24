@@ -24,8 +24,7 @@ public class CartEditTest extends BaseClass {
         invokeBrowser();
         driver = getDriver();
 
-        // ✅ Ensure Extent Report is initialized
-       // extent = getExtentReportInstance();
+        //Extent Report creation
         test = extent.createTest("View and Edit Cart Test");
         test.log(Status.INFO, "Test Initialized: View and Edit Cart");
     }
@@ -44,18 +43,18 @@ public class CartEditTest extends BaseClass {
             wait.until(ExpectedConditions.elementToBeClickable(By.id("send2"))).click();
             test.log(Status.PASS, "Logged in Successfully");
 
-            // ✅ Click on Cart Icon (Ensure It's Clickable)
+            //Click on Cart Icon (Ensure It's Clickable)
             WebElement cartIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@class, 'action showcart')]")));
             cartIcon.click();
             test.log(Status.INFO, "Clicked on Cart Icon");
 
-            // ✅ Ensure Cart Dropdown is Fully Loaded Before Clicking "View and Edit Cart"
+            //Ensure Cart Dropdown is Fully Loaded Before Clicking "View and Edit Cart"
             WebElement viewCart = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[normalize-space()='View and Edit Cart']")));
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("arguments[0].click();", viewCart);
             test.log(Status.PASS, "Clicked 'View and Edit Cart' via JavaScriptExecutor");
 
-            // ✅ Wait for URL to Change (Confirm Page Loaded)
+            //Wait for URL to Change (Confirm Page Loaded)
             wait.until(ExpectedConditions.urlContains("checkout/cart"));
             test.log(Status.PASS, "Shopping Cart Page Loaded");
 
@@ -69,16 +68,16 @@ public class CartEditTest extends BaseClass {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
-            // ✅ Ensure Shopping Cart Table is Loaded Before Interacting
+            //Ensure Shopping Cart Table is Loaded Before Interacting
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".cart.table-wrapper")));
 
-            // ✅ Change Quantity
+            //Change Quantity
             WebElement quantityBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@title='Qty']")));
             quantityBox.clear();
             quantityBox.sendKeys("2");
             test.log(Status.INFO, "Changed product quantity to 2");
 
-            // ✅ Click Update Cart
+            //Click Update Cart
             WebElement updateCartBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@title='Update Shopping Cart']")));
             updateCartBtn.click();
             test.log(Status.PASS, "Cart Updated Successfully");
@@ -94,17 +93,17 @@ public class CartEditTest extends BaseClass {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
-            // ✅ Ensure Shopping Cart Table is Loaded Before Removing Product
+            //Ensure Shopping Cart Table is Loaded Before Removing Product
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".cart.table-wrapper")));
 
-            // ✅ Click Remove Product
+            //Click Remove Product
             WebElement removeItem = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@class, 'action-delete')]")));
             removeItem.click();
             test.log(Status.INFO, "Clicked Remove Product");
             JavascriptExecutor js1 = (JavascriptExecutor) driver;
             js1.executeScript("window.scrollBy(0, 300);");
             Thread.sleep(2000);
-            // ✅ Capture Screenshot
+            //Capture Screenshot
             ScreenshotUtil.takeScreenshot(driver, "Updated_Cart");
             test.log(Status.INFO, "Screenshot Captured: Updated Cart");
            

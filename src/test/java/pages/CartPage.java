@@ -6,8 +6,9 @@ import java.time.Duration;
 
 public class CartPage {
     WebDriver driver;
+    //Opens the cart by clicking on cart icon
     By cartIcon = By.cssSelector(".showcart");
-   // By viewCartLink = By.xpath("//a[contains(text(),'View and Edit Cart')]");
+    // proceeds to checkout by clicking proceed to checkout button
     By proceedToCheckoutBtn = By.xpath("//button[contains(text(),'Proceed to Checkout')]");
 
     public CartPage(WebDriver driver) {

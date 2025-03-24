@@ -22,8 +22,8 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
     }
 )
 
-@Feature("Add to Cart")  // ✅ Grouping feature in Allure reports
-@Story("User adds product to cart")  // ✅ Defining the story in Allure reports
+@Feature("Add to Cart")  //Grouping feature in Allure reports
+@Story("User adds product to cart")  //Defining the story in Allure reports
 public class AddToCartRunner extends AbstractTestNGCucumberTests {
     private static ExtentReports extent;
 

@@ -35,22 +35,12 @@ public class AddSteps {
 
     @When("User selects Women -> Tops > Antonia Racer Tank -> XL -> Purple")
     public  void user_selects_fixed_category() throws InterruptedException {
-          // Actions actions = new Actions(driver);
-//            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//            WebElement women = wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Women"))); // Wait for Women Menu
-//            actions.moveToElement(women).perform();
-//            WebElement tops = wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Tops"))); // Wait for Tops
-//            actions.moveToElement(tops).perform();
-//            WebElement jackets = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Hoodies & Sweatshirts"))); // Wait for Jackets
-//            actions.moveToElement(jackets).click().perform();
         // Navigate to "Women" -> "Tops"
       driver.findElement(By.linkText("Women")).click();
       driver.findElement(By.linkText("Tops")).click();
       JavascriptExecutor js = (JavascriptExecutor) driver;
        js.executeScript("window.scrollBy(0, 300);");
-        // Select "Phoebe Zipper Sweatshirt"
-//        WebElement shirt = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Phoebe Zipper Sweatshirt"))); // Wait for Jackets
-//        actions.moveToElement(shirt).click().perform();
+        // Select "Antonia Racer Tank"
         driver.findElement(By.linkText("Antonia Racer Tank")).click();
       Thread.sleep(3000);
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
@@ -58,7 +48,7 @@ public class AddSteps {
         //Selects XL Size
 		driver.findElement(By.xpath("//div[@id='option-label-size-143-item-170']")).click();
 		Thread.sleep(3000);
-		//Selects Gray color
+		//Selects Purple color
 		driver.findElement(By.xpath("//div[@id='option-label-color-93-item-57']")).click();
 		 // Set Quantity to 3
         WebElement quantityInput = driver.findElement(By.id("qty"));
@@ -75,9 +65,6 @@ public class AddSteps {
 
     @Then("Item should be added to cart successfully")
     public void item_added_successfully() {
-//        WebElement successMsg = driver.findElement(By.linkText("shopping cart"));
-//        //Assert.assertTrue(successMsg.isDisplayed());
-//        System.out.println(successMsg);
         driver.quit();
     }
     

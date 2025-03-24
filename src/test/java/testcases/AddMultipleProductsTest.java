@@ -34,9 +34,7 @@ public class AddMultipleProductsTest extends BaseClass {
          Thread.sleep(2000);
          driver.findElement(By.id("send2")).click();
          Thread.sleep(2000);
-//         test.log(Status.INFO, "Navigating to Cart");
-//         test.log(Status.PASS, "Procedd to checkout successfully");
-        
+         //Selects Orestes Fitness Short (Men->Bottoms->Orestes Fitness Short->XL->Black->Qty(3))        
          driver.findElement(By.linkText("Men")).click();
          driver.findElement(By.linkText("Bottoms")).click();
          JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -48,7 +46,7 @@ public class AddMultipleProductsTest extends BaseClass {
            //Selects XL Size
    		driver.findElement(By.xpath("//div[@id='option-label-size-143-item-175']")).click();
    		Thread.sleep(3000);
-   		//Selects Gray color
+   		//Selects Black color
    		driver.findElement(By.xpath("//div[@id='option-label-color-93-item-49']")).click();
    		 // Set Quantity to 3
            WebElement quantityInput1 = driver.findElement(By.id("qty"));
@@ -66,6 +64,7 @@ public class AddMultipleProductsTest extends BaseClass {
 	 }
 	 @Test(priority = 3)
 	    public void addwatch() throws InterruptedException {
+		//Selects Aim Analog Watches (Gear->Watches->Aim Analog Watches->Qty(2)) 
       driver.findElement(By.linkText("Gear")).click();
       driver.findElement(By.linkText("Watches")).click();
       JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -91,6 +90,7 @@ public class AddMultipleProductsTest extends BaseClass {
 	 }
 	 @Test(priority=2)
 	 public void addshirt() throws InterruptedException {
+		//Selects Phoebe Zipper Sweatshirt (Women->Hoodies & Sweatshirts->Phoebe Zipper Sweatshirt ->XL->Gray->(Qty-1)) 
 	 driver.findElement(By.linkText("Women")).click();
      driver.findElement(By.linkText("Hoodies & Sweatshirts")).click();
      JavascriptExecutor js = (JavascriptExecutor) driver;
