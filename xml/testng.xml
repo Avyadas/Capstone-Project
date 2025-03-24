@@ -22,6 +22,7 @@
             <class name="testcases.LoginPageTest" />
             <class name="runner.RunCucumberTest" />
             <class name="testcases.AddMultipleProductsTest" />
+            <class name="testcases.CartEditTest" />
             <class name="testcases.CheckoutTest" />
         </classes>
     </test>

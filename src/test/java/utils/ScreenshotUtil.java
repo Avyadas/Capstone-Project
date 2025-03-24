@@ -28,7 +28,7 @@ public class ScreenshotUtil {
             
             // Create timestamped filename
             //String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-            String filepath = "Screenshots/" + screenshotName ;
+            String filepath = "screenshots/" + screenshotName + ".png" ;
 
             // Save the screenshot
             FileUtils.copyFile(src, new File(filepath));

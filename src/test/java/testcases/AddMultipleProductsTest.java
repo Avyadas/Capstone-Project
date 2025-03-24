@@ -2,6 +2,7 @@ package testcases;
 
 import org.openqa.selenium.By;
 
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,9 +10,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
-
 import base.BaseClass;
+
 import utils.ScreenshotUtil;
 
 
@@ -64,7 +64,7 @@ public class AddMultipleProductsTest extends BaseClass {
            ScreenshotUtil.takeScreenshot(driver, "Men_Added_Success");
            driver.navigate().to("https://magento.softwaretestingboard.com");
 	 }
-	 @Test(priority = 1)
+	 @Test(priority = 3)
 	    public void addwatch() throws InterruptedException {
       driver.findElement(By.linkText("Gear")).click();
       driver.findElement(By.linkText("Watches")).click();
@@ -89,7 +89,7 @@ public class AddMultipleProductsTest extends BaseClass {
         ScreenshotUtil.takeScreenshot(driver, "Watch_Added_Success");
         driver.navigate().to("https://magento.softwaretestingboard.com");
 	 }
-	 @Test(priority=1)
+	 @Test(priority=2)
 	 public void addshirt() throws InterruptedException {
 	 driver.findElement(By.linkText("Women")).click();
      driver.findElement(By.linkText("Hoodies & Sweatshirts")).click();

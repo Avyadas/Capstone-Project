@@ -1,11 +1,11 @@
 package stepDef;
 import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.Given;
@@ -35,7 +35,7 @@ public class AddSteps {
 
     @When("User selects Women -> Tops > Antonia Racer Tank -> XL -> Purple")
     public  void user_selects_fixed_category() throws InterruptedException {
-           Actions actions = new Actions(driver);
+          // Actions actions = new Actions(driver);
 //            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //            WebElement women = wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Women"))); // Wait for Women Menu
 //            actions.moveToElement(women).perform();
@@ -64,7 +64,6 @@ public class AddSteps {
         WebElement quantityInput = driver.findElement(By.id("qty"));
         quantityInput.clear();
         quantityInput.sendKeys("3");
-        Thread.sleep(1000);
 		//Adds products to the cart
 		driver.findElement(By.xpath("//button[@id='product-addtocart-button']")).click();
 		Thread.sleep(3000);

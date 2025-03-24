@@ -4,13 +4,6 @@
   <test thread-count="5" name="Magento Tests(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testcases.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="testLogin" invocation-numbers="0 1"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testcases.LoginPageTest -->
       <class name="testcases.AddMultipleProductsTest">
         <methods>
           <include name="tearDownTest"/>
@@ -20,14 +13,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- testcases.AddMultipleProductsTest -->
-      <class name="testcases.UserRegistrationTest">
-        <methods>
-          <include name="tearDownTest"/>
-          <include name="registerWithValidDetails"/>
-          <include name="registerWithInvalidDetails"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- testcases.UserRegistrationTest -->
       <class name="testcases.CheckoutTest">
         <methods>
           <include name="tearDown"/>
