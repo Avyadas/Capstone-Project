@@ -1,6 +1,7 @@
 package base;
 
 import java.io.FileInputStream;
+
 import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import utils.ExtentManager;
+import extent.ExtentManager;
 
 public class BaseClass {
     public static WebDriver driver;

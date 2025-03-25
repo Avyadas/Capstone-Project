@@ -21,7 +21,7 @@ public class LoginPageTest extends BaseClass {
         test = extent.createTest("Login Page Test");
     }
 
-    @Test(dataProvider = "LoginData" ,dependsOnMethods= "testcases.UserRegistrationTest.registerWithValidDetails")
+    @Test(dataProvider = "LoginData" )
     public void testLogin(String email, String password, String status) {
         test.log(Status.INFO, "Attempting login with email: " + email);
         loginPage.login(email, password);

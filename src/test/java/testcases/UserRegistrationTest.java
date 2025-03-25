@@ -45,7 +45,6 @@ public class UserRegistrationTest extends BaseClass {
 
         Thread.sleep(5000);
         ScreenshotUtil.takeScreenshot(driver, "ValidDetails");
-       // registrationPage.handleAlert("Invalid details ! Try again", "InvalidDetails");
         test.log(Status.PASS, "Registration successful.");
         openLoginPage();
     }

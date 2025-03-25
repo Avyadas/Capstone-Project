@@ -1,4 +1,4 @@
-package runner;
+package testcases;
 
 import base.BaseClass;
 import io.cucumber.core.cli.Main;

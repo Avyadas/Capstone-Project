@@ -28,6 +28,7 @@ public class CartEditTest extends BaseClass {
         test = extent.createTest("View and Edit Cart Test");
         test.log(Status.INFO, "Test Initialized: View and Edit Cart");
     }
+    
 
     @Test(priority = 1)
     public void viewAndEditCart() {
