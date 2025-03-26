@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-24T17:21:58 IST" name="Luma" finished-at="2025-03-24T17:22:00 IST" duration-ms="1256">
+  <suite started-at="2025-03-26T11:23:21 IST" name="Luma" finished-at="2025-03-26T11:26:58 IST" duration-ms="217280">
     <groups>
     </groups>
-    <test started-at="2025-03-24T17:21:58 IST" name="Magento Tests" finished-at="2025-03-24T17:22:00 IST" duration-ms="1256">
+    <test started-at="2025-03-26T11:23:21 IST" name="Magento Tests" finished-at="2025-03-26T11:26:58 IST" duration-ms="217280">
+      <class name="testcases.CartEditTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CartEditTest@6cc4cdb9]" started-at="2025-03-26T11:25:33 IST" name="setUp" finished-at="2025-03-26T11:25:36 IST" duration-ms="3577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="viewAndEditCart()[pri:1, instance:testcases.CartEditTest@6cc4cdb9]" started-at="2025-03-26T11:25:36 IST" name="viewAndEditCart" finished-at="2025-03-26T11:25:48 IST" duration-ms="11792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewAndEditCart -->
+        <test-method signature="updateQuantity()[pri:2, instance:testcases.CartEditTest@6cc4cdb9]" started-at="2025-03-26T11:25:48 IST" name="updateQuantity" finished-at="2025-03-26T11:25:52 IST" duration-ms="4380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateQuantity -->
+        <test-method signature="removeProduct()[pri:3, instance:testcases.CartEditTest@6cc4cdb9]" started-at="2025-03-26T11:25:52 IST" name="removeProduct" finished-at="2025-03-26T11:25:58 IST" duration-ms="5877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProduct -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.CartEditTest@6cc4cdb9]" started-at="2025-03-26T11:25:58 IST" name="tearDownTest" finished-at="2025-03-26T11:26:00 IST" duration-ms="1203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- testcases.CartEditTest -->
+      <class name="testcases.RunCucumberTest">
+        <test-method signature="runCucumberTests()[pri:3, instance:testcases.RunCucumberTest@e3b3b2f]" started-at="2025-03-26T11:23:57 IST" name="runCucumberTests" finished-at="2025-03-26T11:24:29 IST" duration-ms="31144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCucumberTests -->
+      </class> <!-- testcases.RunCucumberTest -->
+      <class name="testcases.AddMultipleProductsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.AddMultipleProductsTest@50f6ac94]" started-at="2025-03-26T11:24:29 IST" name="setUp" finished-at="2025-03-26T11:24:32 IST" duration-ms="3596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addmen()[pri:1, instance:testcases.AddMultipleProductsTest@50f6ac94]" started-at="2025-03-26T11:24:32 IST" name="addmen" finished-at="2025-03-26T11:25:04 IST" duration-ms="31559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addmen -->
+        <test-method signature="addshirt()[pri:2, instance:testcases.AddMultipleProductsTest@50f6ac94]" started-at="2025-03-26T11:25:04 IST" name="addshirt" finished-at="2025-03-26T11:25:19 IST" duration-ms="15095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addshirt -->
+        <test-method signature="addwatch()[pri:3, instance:testcases.AddMultipleProductsTest@50f6ac94]" started-at="2025-03-26T11:25:19 IST" name="addwatch" finished-at="2025-03-26T11:25:32 IST" duration-ms="12730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addwatch -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.AddMultipleProductsTest@50f6ac94]" started-at="2025-03-26T11:25:32 IST" name="tearDownTest" finished-at="2025-03-26T11:25:33 IST" duration-ms="1186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- testcases.AddMultipleProductsTest -->
+      <class name="testcases.UserRegistrationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.UserRegistrationTest@3e78b6a5]" started-at="2025-03-26T11:23:21 IST" name="setUp" finished-at="2025-03-26T11:23:31 IST" duration-ms="9818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerWithInvalidDetails()[pri:1, instance:testcases.UserRegistrationTest@3e78b6a5]" started-at="2025-03-26T11:23:31 IST" name="registerWithInvalidDetails" finished-at="2025-03-26T11:23:39 IST" duration-ms="8714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithInvalidDetails -->
+        <test-method signature="registerWithValidDetails()[pri:2, instance:testcases.UserRegistrationTest@3e78b6a5]" started-at="2025-03-26T11:23:40 IST" name="registerWithValidDetails" finished-at="2025-03-26T11:23:47 IST" depends-on-methods="testcases.UserRegistrationTest.registerWithInvalidDetails" duration-ms="7911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithValidDetails -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:testcases.UserRegistrationTest@3e78b6a5]" started-at="2025-03-26T11:23:47 IST" name="tearDownTest" finished-at="2025-03-26T11:23:48 IST" duration-ms="876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- testcases.UserRegistrationTest -->
       <class name="testcases.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.LoginPageTest@2d29b4ee]" started-at="2025-03-24T17:21:59 IST" name="setup" finished-at="2025-03-24T17:21:59 IST" duration-ms="240" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.LoginPageTest@3e2055d6]" started-at="2025-03-26T11:23:48 IST" name="setup" finished-at="2025-03-26T11:23:48 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@2d29b4ee]" started-at="2025-03-24T17:22:00 IST" name="testLogin" data-provider="LoginData" finished-at="2025-03-24T17:22:00 IST" duration-ms="36" status="FAIL">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3e2055d6]" started-at="2025-03-26T11:23:50 IST" name="testLogin" data-provider="LoginData" finished-at="2025-03-26T11:23:52 IST" duration-ms="1853" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,49 +104,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at pages.LoginPage.login(LoginPage.java:24)
-at testcases.LoginPageTest.testLogin(LoginPageTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@2d29b4ee]" started-at="2025-03-24T17:22:00 IST" name="testLogin" data-provider="LoginData" finished-at="2025-03-24T17:22:00 IST" duration-ms="3" status="FAIL">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginPageTest@3e2055d6]" started-at="2025-03-26T11:23:52 IST" name="testLogin" data-provider="LoginData" finished-at="2025-03-26T11:23:55 IST" duration-ms="2985" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,90 +125,28 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at pages.LoginPage.login(LoginPage.java:24)
-at testcases.LoginPageTest.testLogin(LoginPageTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@2d29b4ee]" started-at="2025-03-24T17:22:00 IST" name="tearDown" finished-at="2025-03-24T17:22:00 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at testcases.LoginPageTest.tearDown(LoginPageTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:229)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:215)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@3e2055d6]" started-at="2025-03-26T11:23:55 IST" name="tearDown" finished-at="2025-03-26T11:23:57 IST" duration-ms="2757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.LoginPageTest -->
+      <class name="testcases.CheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.CheckoutTest@28194a50]" started-at="2025-03-26T11:26:00 IST" name="setUp" finished-at="2025-03-26T11:26:06 IST" duration-ms="6011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkoutProcess()[pri:1, instance:testcases.CheckoutTest@28194a50]" started-at="2025-03-26T11:26:06 IST" name="checkoutProcess" finished-at="2025-03-26T11:26:57 IST" duration-ms="51409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutProcess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.CheckoutTest@28194a50]" started-at="2025-03-26T11:26:57 IST" name="tearDown" finished-at="2025-03-26T11:26:58 IST" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.CheckoutTest -->
     </test> <!-- Magento Tests -->
   </suite> <!-- Luma -->
 </testng-results>

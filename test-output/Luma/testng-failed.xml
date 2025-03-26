@@ -2,15 +2,33 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Luma]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Magento Tests(failed)">
-    <parameter name="browser" value="edge"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="testcases.LoginPageTest">
+      <class name="testcases.CartEditTest">
+        <methods>
+          <include name="updateQuantity"/>
+          <include name="viewAndEditCart"/>
+          <include name="removeProduct"/>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.CartEditTest -->
+      <class name="testcases.AddMultipleProductsTest">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="addmen"/>
+          <include name="addshirt"/>
+          <include name="addwatch"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.AddMultipleProductsTest -->
+      <class name="testcases.CheckoutTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testLogin" invocation-numbers="0 1"/>
-          <include name="setup"/>
+          <include name="checkoutProcess"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.LoginPageTest -->
+      </class> <!-- testcases.CheckoutTest -->
     </classes>
   </test> <!-- Magento Tests(failed) -->
 </suite> <!-- Failed suite [Luma] -->

@@ -6,7 +6,6 @@ pages\LoginPage.class
 pages\CartPage.class
 runner\AddToCartRunner.class
 testcases\UserRegistrationTest.class
-runner\RunCucumberTest.class
 testcases\CheckoutTest.class
 stepDef\LoginSteps.class
 pages\CheckoutPage.class
@@ -16,5 +15,3 @@ utils\ExcelUtil.class
 stepDef\AddSteps.class
 utils\ScreenshotUtil.class
 testcases\CartEditTest.class
-utils\ExtentManager.class
-testng\ExtentReport.class
